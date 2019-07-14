@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Spring Boot Thymleaf Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<main role="main" class="container">
+  <form method="POST" action="/registration" th:object="${userForm}" class="form-signin">
+    <h2 class="form-signin-heading">Create your account</h2>
+    <div>
+      <input type="text" name="username" th:value="*{username}" class="form-control" placeholder="Username" autofocus="true" />
+    </div>
+    <div>
+      <input type="password" name="password" th:value="*{password}" class="form-control" placeholder="Password" />
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+  </form>
+</main>
+</body>
+</html>

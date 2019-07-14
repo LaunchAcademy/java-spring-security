@@ -1,0 +1,7 @@
+---
+title: "Java Spring Security"
+type: "article"
+description: "Learn how to use Spring Security to protect your application."
+tags: "java,oop,classes,spring security"
+ignore:
+- "java-spring-security.md"
